@@ -1,10 +1,5 @@
 import React, { useState } from 'react'
 
-let user  = {
-    firstName: "John",
-    lastName: "Doe"
-}
-
 export default function PlayerCard ({player,deleteFun,playerIndex}) {
 
     const [points, setPoint] = useState(0)
@@ -13,7 +8,6 @@ export default function PlayerCard ({player,deleteFun,playerIndex}) {
 
     const handleIncrement = () => {
         setPoint(points+1)
-        user.firstName="User points: "+points
     }
 
     const handleReset=()=>{
